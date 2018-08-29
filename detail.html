@@ -3,15 +3,71 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/master.css">
-    <script src="js/jquery-1.7.1.js" charset="utf-8"></script>
-    <title>Get Location For a Hospital</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="js/master.js"></script>
   </head>
   <body>
     <div class=" container">
+        <!-- <div class="jumbotron"> -->
+          <form class="fom-group" action="index.html" method="post">
+            <h1> Welcome</h1>
+              <section class="countySection">
+              <h3 id="county">County</h3>
+             <div id="countyList" >
+               <label for="nairobi">Nairobi</label>
+                 <input type="radio" name="county"  class="form-control" value="Nairobi"><br>
+                 <label for="kisumu">Kisumu</label>
+                 <input type="radio" name="county"  class="form-control" value="Kisumu"><br>
+                 <label for="mombasa">Mombasa</label>
+                 <input type="radio" name="county"   class="form-control" value="Mombasa"><br>
+                 <label for="nakuru">Nakuru</label>
+                 <input type="radio" name="county"  class="form-control" value="Nakuru"><br>
+             </div>
+          <span id="button">   <button type="button" name="button" style="float: right;" value="NEXT" >NEXT</button></span>
+              </section>
 
-       <h1> Welcome</h1>
 
+
+              <section id="subcountySection">
+                <pid="Nairobi SubCounties">Nairobi SubCounties</p>
+                <input type="radio" name="nairobi" value="machaka">Machaka<br>
+                <input type="radio" name="nairobi" value="kajiado">kajiado<br>
+                <input type="radio" name="nairobi" value="kiambu">kiambu<br>
+                <input type="radio" name="nairobi" value="muranga">Muranga<br>
+
+                <p id="Kisumu SubCounties">Kisumu SubCounties</p>
+                <input type="radio" name="kisumu" value="kisumuwest">Kisumu West<br>
+                <input type="radio" name="kisumu" value="kisumucentral">Kisumu Central<br>
+                <input type="radio" name="kisumu" value="Seme">Seme<br>
+                <input type="radio" name="kisumu" value="kisumueast">Kisumu East<br>
+
+                <p id="Mombasa SubCounties">Mombasa SubCounties</p>
+                <input type="radio" name="mombasa" value="changamwe">Changamwe<br>
+                <input type="radio" name="mombasa" value="jomvu">Jomvu<br>
+                <input type="radio" name="mombasa" value="kisauni">Kisauni<br>
+                <input type="radio" name="mombasa" value="nyali">Nyali<br>
+
+                <p id="Nakuru SubCounties" >Nakuru SubCounties</p>
+                <input type="radio" name="nakuru" value="nakurutowneast">Nakuru Town East<br>
+                <input type="radio" name="nakuru" value="nakurutowneast">Nakuru Town East<br>
+                <input type="radio" name="nakuru" value="nakurutownwest">Nakuru Town West<br>
+                <input type="radio" name="nakuru" value="bahati">Bahati<br>
+
+              </section>
+
+
+              <section id="hospitalsSection">
+                <div id="Machako">
+                  <button type="button" id="btn" name="button" onclick="">Machakos.hs Map</button>
+
+        <span id="myMap">result</span>
+                </div>
+          </form>
+
+
+
+    </div>
     </div>
   </body>
 </html>
